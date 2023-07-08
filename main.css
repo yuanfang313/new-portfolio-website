@@ -1,0 +1,42 @@
+.grid-container {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+.header-bar {
+  background: #fff;
+  padding: 0px;
+}
+
+.header-bar-title {
+  font-size: 24px;
+  padding: 20px 0px 20px 0px;
+}
+
+.header-bar-right a {
+  padding: 0px 20px 0px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cell {
+  padding: 30px;
+}
+
+.cell img {
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3%;
+}
