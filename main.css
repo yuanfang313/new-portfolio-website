@@ -5,6 +5,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: rgb(245, 245, 245);
 }
 main {
   padding-right: 0.9375rem;
@@ -110,12 +111,12 @@ a:hover {
 /* style_works */
 img {
   border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
   transition: box-shadow 0.3s;
 }
 
 img:hover {
-  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.3), 0 10px 24px 0 rgba(0, 0, 0, 0.28);
+  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.18);
 }
 
 .work-title-container {
