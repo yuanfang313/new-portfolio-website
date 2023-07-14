@@ -28,8 +28,8 @@ ul {
 
 /* layout_header */
 .header-bar.container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .header-bar {
   width: 100%;

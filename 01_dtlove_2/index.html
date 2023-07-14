@@ -35,6 +35,12 @@
     .main-content.grid {
       grid-column: span 2;
     }
+    .title.grid {
+      padding-left: 13%;
+    }
+    .long-intro.grid {
+      padding-right: 9%;
+    }
     .primary-title {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
@@ -141,8 +147,32 @@
       width: 100%;
     }
 
+    @media (max-width: 950px) {
+      .grid {
+        padding: 5%;
+      }
+      .title.grid {
+        padding: 5%;
+      }
+      .long-intro.grid {
+        padding: 5%;
+      }
+
+      .video-container {
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+      }
+    }
+
     @media (max-width: 800px) {
       .grid {
+        padding: 2%;
+      }
+      .title.grid {
+        padding: 2%;
+      }
+      .long-intro.grid {
         padding: 2%;
       }
       .grid-container {
@@ -154,13 +184,6 @@
     }
 
     /* video style */
-    @media (max-width: 950px) {
-      .video-container {
-        width: 100%;
-        height: 30rem;
-        overflow: hidden;
-      }
-    }
     @media (max-width: 800px) {
       .video-container {
         width: 100%;
@@ -199,7 +222,7 @@
       </div>
       <!-- works -->
       <div class="all-content container">
-        <div class="intro grid-container">
+        <div class="grid-container">
           <div class="title grid">
             <p class="primary-title">DT LOVE</p>
             <p class="sub-title">
@@ -327,26 +350,351 @@
             </div>
             <div class="new-training-structure section">
               <p class="text green-left-border">NEW TRAINING STRUCTURE</p>
+              <p class="text no-border">
+                In this phase of application development, we added three new
+                levels (with new training structures) to the application, which
+                were “PRETEST”, “CONDITIONAL PRETEST”, “FIELDS OF X”. The
+                training structure in “Level One” and “Level two” remains the
+                same with the previous application (using 3d animal models as
+                learning content).
+              </p>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/06_new training structure.png"
+                alt=""
+              />
+              <p class="text orange-left-border">PRETEST</p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing a trial in Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Rules of selecting (by the system) a target character for
+                    each trial ◦ For each trial, one of the six target
+                    characters will be randomly selected. ◦ The same target
+                    character won’t be selected successively more than twice.
+                  </p>
+                </li>
+              </ul>
+              <p class="text orange-left-border">CONDITIONAL PRETEST</p>
+              <p class="text no-border">
+                Conditional Pretest consists of three sections: Baseline Test,
+                Training, and Post Test.
+              </p>
+              <p class="text blue-left-border">BASELINE TEST & POST TEST</p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing a trial in Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Rules of selecting (by the system) a target character for
+                    each trial: same as “PRETEST”.
+                  </p>
+                </li>
+              </ul>
+              <p class="text blue-left-border">TRAINING</p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing a trial in Pretest: trigger the
+                    target character without prompts (within 3s after characters
+                    appear).
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing Pretest: trigger the target
+                    character without prompts for successively 3 times for all
+                    the three “pairs of characters” (“horse” (马) and “cattle”
+                    (牛), “goose” (鵝) and “fox” (狐), “bear” (熊) and
+                    “elephant” (象)).
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Rules of selecting (by the system) a target character for
+                    each trial:
+                  </p>
+                  <ul>
+                    <li>
+                      <p class="text no-border">
+                        Randomly select a “pair of characters” among the three
+                        pairs of characters.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        Given the pair of characters, randomly select target
+                        character within the pair.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        The same target character won’t be selected succesively
+                        more than twice.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        If both characters in the pair are selected correctly in
+                        time (within 3s) for succesively 3 times, move to the
+                        next pair of characters.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/06_pretest-conditional test_example.jpg"
+              />
+              <p class="text orange-left-border">FIELDS OF X</p>
+              <p class="text no-border">
+                "Fields of x" consists of three sections: Baseline Test,
+                Training, and Post Test.
+              </p>
+              <p class="text blue-left-border">BASELINE TEST & POST TEST</p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing a trial in Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing Pretest: no criteria.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Rules of selecting (by the system) a target character for
+                    each trial: same as “PRETEST”.
+                  </p>
+                </li>
+              </ul>
+              <p class="text blue-left-border">TRAINING</p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing a trial in Pretest: trigger the
+                    target character without prompts (within 3s after characters
+                    appear).
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    The criteria for passing Pretest: trigger the target
+                    character without prompts for successively 3 times for all
+                    the three “pairs of characters” (“horse” (马) and “cattle”
+                    (牛), “goose” (鵝) and “fox” (狐), “bear” (熊) and
+                    “elephant” (象)).
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Rules of selecting (by the system) a target character for
+                    each trial:
+                  </p>
+                  <ul>
+                    <li>
+                      <p class="text no-border">
+                        Randomly select a character among the six target
+                        character.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        The same target character won’t be selected successively
+                        more than twice.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        If the user doesn’t make the right response within a
+                        certain time frame (3s), the same target character will
+                        be selected again till the user gets it right.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text no-border">
+                        If both characters in the pair are selected correctly in
+                        time (within 3s) for succesively 3 times, move to the
+                        next pair of characters.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/06_field of x_example.png"
+              />
             </div>
+
             <div class="nav-component section">
               <p class="text green-left-border">NAVIGATION COMPONENT</p>
+              <p class="text no-border">
+                Trigger a button on the controller to bring up the navigation
+                panel to navigate among different levels.
+              </p>
+              <img class="docImage" src="/01_dtlove_2/07_UI_nav.png" />
             </div>
             <div class="data-collection-component section">
               <p class="text green-left-border">DATA-COLLECTION COMPONENT</p>
+              <p class="text no-border">
+                At the end of each trial, user data will be sent from the device
+                and stored in a Google Spreadsheet.
+              </p>
+              <p class="text no-border">
+                The demanded user data is not always one-dimensional data, for
+                example, the data of the user’s head orientation, which would be
+                recorded as “(x, y, z)”. The infographic beneath presents the
+                meaning of “x”, “y” and “z”.
+              </p>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/08_headposeInfo Interpretation diagram.jpg"
+              />
             </div>
             <div class="debug-component section">
               <p class="text green-left-border">DEBUG COMPONENT</p>
+              <p class="text no-border">
+                Because the platform of the application is head-mounted desplays
+                (HMD), so it is hard to debug, which especially nessary for the
+                data collection component. Therefore I created a debug component
+                for each of the VR and AR version. It is a visual validation of
+                the acuracy of user data that calculating by the device.
+              </p>
+              <p class="text no-border">
+                Researchers can open debug panel (from navigation panel) in all
+                levels to see whether the timers in the application are
+                functioning as demand.
+              </p>
+              <img class="docImage" src="/01_dtlove_2/09_UI_debug panel.png" />
+              <img
+                class="docImage"
+                src="/01_dtlove_2/09_UI_debug panel_vr_example.png"
+              />
+              <img
+                class="docImage"
+                src="/01_dtlove_2/09_UI_Debug panel_ar_example.png"
+              />
             </div>
             <div class="other-features section">
               <p class="text green-left-border">OTHER FEATURES</p>
+              <p class="text orange-left-border">SETTING PLAYER NAME</p>
+              <p class="text no-border">
+                In order to identify the data of different users, the user can
+                use keyboard to set player name in “Main menu scene”. So when
+                researchers check user data in Google spreadsheet, data from
+                each trial will have “Player Name” as one data point.
+              </p>
+              <img class="docImage" src="/01_dtlove_2/10_UI_keyboard.png" />
+              <p class="text orange-left-border">CUSTOMIZE PARAMETERS</p>
+              <p class="text no-border">
+                Researchers can use setting panel to change the “passing
+                critira” in each section of “PRETEST”, “CONDITIONAL PRETEST”,
+                and “FIELDS OF X”, can customize the number (“X”) of characters
+                in “FIELDS OF X”.
+              </p>
+              <p class="text no-border">
+                This feature can allow researchers test through various
+                scenarios without a developer.
+              </p>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/10_UI_setting panel_vr_example.png"
+              />
+              <img
+                class="docImage"
+                src="/01_dtlove_2/10_UI_setting panel_ar_example.png"
+              />
             </div>
             <div class="spatial-layout section">
               <p class="text green-left-border">SPATIAL LAYOUT</p>
+              <p class="text no-border">
+                For the Field of View (FOV) of Oculus Quest (1 & 2) and Magic
+                Leap One are very different, the spatial layout and the scare of
+                elements in the scene become significant.
+              </p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    FOV of Oculus (1 & 2): horizontal FOV is 104 deg (+- 4);
+                    vertical FOV is 89 deg (+- 4)
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    FOV of Magic Leap One: horizontal FOV is 40 deg; vertical
+                    FOV is 30 deg
+                  </p>
+                </li>
+              </ul>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/11_spatial layout.png"
+                alt=""
+              />
             </div>
             <div class="next-step section">
               <p class="text green-left-border">NEXT STEP</p>
+              <p class="text blue-left-border">
+                Explore spatial impact to research result (for VR version)
+              </p>
+              <ul>
+                <li>
+                  <p class="text no-border">
+                    Implement “passthrough” feature to the project. Oculus Quest
+                    2 has a new feature that can allow users enter an “AR mode”
+                    which is “video see-through” instead of “optical
+                    see-through” like Magic Leap One. It may be interesting to
+                    have a button in the VR version to toggle this “AR mode”.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Add other environmental elements (like trees). Using a
+                    button to toggle different environmental settings.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Implement a feature that can change the viewing angle of
+                    players.
+                  </p>
+                </li>
+              </ul>
+              <p class="text blue-left-border">
+                Explore auditory impact to research result (for VR version)
+              </p>
+              <p class="text no-border">
+                Add a button to toggle ambient sound.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
         </div>
       </div>
     </main>
