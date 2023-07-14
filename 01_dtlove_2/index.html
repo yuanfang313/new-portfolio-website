@@ -3,11 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>Fang Yuan</title>
   </head>
-  <style></style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    p {
+      margin: 0px;
+      color: rgb(70, 70, 70);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .all-content.container {
+      padding-top: 50px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+    }
+
+    .grid {
+      padding: 5%;
+      padding-top: 0px;
+    }
+    .main-content.grid {
+      grid-column: span 2;
+    }
+    .primary-title {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    .sub-title {
+      padding-left: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+
+    hr {
+      margin-bottom: 20px;
+      width: 90%;
+      border-top: 1px dashed rgb(170, 170, 170);
+    }
+
+    .short-intro {
+      border-left: 5px solid rgb(154, 208, 245);
+    }
+
+    .short-intro li {
+      margin-bottom: 10px;
+      margin-left: 6px;
+    }
+
+    .intro-type {
+      font-size: 16px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .intro-type-detail {
+      display: inline;
+      color: gray;
+    }
+
+    .text.no-border {
+      margin-top: 10px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      line-height: 130%;
+      color: black;
+    }
+    .text.green-left-border {
+      margin-top: 30px;
+      padding-left: 10px;
+      border-left: 17px solid rgb(179, 221, 91);
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .text.red-left-border {
+      margin-left: 4px;
+      margin-bottom: 30px;
+      padding-left: 10px;
+      border-left: 13px solid rgb(255, 130, 130);
+      font-size: 18.5px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+    .text.orange-left-border {
+      margin-top: 20px;
+      margin-left: 7px;
+      padding-left: 10px;
+      border-left: 10px solid rgb(253, 184, 39);
+      font-size: 17.5px;
+      font-weight: 500;
+    }
+    .text.blue-left-border {
+      margin-top: 10px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 7px solid rgb(154, 208, 245);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    video {
+      height: 100%;
+    }
+
+    .video-container {
+      margin-top: 15px;
+      margin-bottom: 10%;
+      padding-top: 0.5%;
+      width: 100%;
+      height: 35rem;
+      background-color: black;
+      text-align: center;
+      overflow: hidden;
+    }
+    .video-container:hover {
+      cursor: pointer;
+    }
+
+    .docImage {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        padding: 2%;
+      }
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, 100%);
+      }
+      .main-content.grid {
+        grid-column: span 1;
+      }
+    }
+
+    /* video style */
+    @media (max-width: 950px) {
+      .video-container {
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 800px) {
+      .video-container {
+        width: 100%;
+        height: 25rem;
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 650px) {
+      .video-container {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 500px) {
+      .video-container {
+        width: 100%;
+        height: 15rem;
+        overflow: hidden;
+      }
+    }
+  </style>
   <body>
     <main>
       <!-- navigation -->
@@ -23,48 +198,155 @@
         </div>
       </div>
       <!-- works -->
-      <div class="works-header wrap">
-        <div class="works-header title">DT LOVE LATEST VERSION</div>
-        <div class="works-header date">2022</div>
-        <div class="works-intro">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
-      </div>
-
-      <div class="works container">
-        <div class="works item">
-          <a href=""><img class="coverImage" src="00_cover.png" alt="" /></a>
-        </div>
-        <div class="works item">
-          <a href=""
-            ><img class="coverImage" src="02_dtlove_1/00_cover.png" alt=""
-          /></a>
-        </div>
-        <div class="works item">
-          <a href=""
-            ><img class="coverImage" src="03_birds/00_cover.png" alt=""
-          /></a>
-        </div>
-        <div class="works item">
-          <a href=""
-            ><img class="coverImage" src="04_pritzker/00_cover.png" alt=""
-          /></a>
-        </div>
-      </div>
-      <!-- copyright -->
-      <div class="copyright container">
-        <div class="copyright item">
-          <a href="/">© Fang Yuan</a>
+      <div class="all-content container">
+        <div class="intro grid-container">
+          <div class="title grid">
+            <p class="primary-title">DT LOVE</p>
+            <p class="sub-title">
+              A VR application for individuals with Autism Spectrum Disorder
+              (ASD)
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Topic:
+                <p class="intro-type-detail">VR, autism</p>
+              </li>
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">
+                  7 months [Nov 2019 - May 2020, Sep 2020 - Oct 2020]
+                </p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, fullstack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">
+                  Unity 3d, SketchUp for Architecture, Photoshop, Illustrator,
+                  Audacity
+                </p>
+              </li>
+              <li class="intro-type">
+                Programming language & SDK:
+                <p class="intro-type-detail">C#, Oculus integration</p>
+              </li>
+              <li class="intro-type">
+                Platform:
+                <p class="intro-type-detail">Oculus Quest</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              Would Virtual Reality (VR) technology facilitate the learning
+              process of individuals with Autism Spectrum Disorder (ASD)?
+            </p>
+            <p class="text no-border">
+              DT LOVE is short for Discrete Trial Learning Over Virtual
+              Environments. Originally it was a VR application aiming at
+              “replicating” the training (proved to be effective for decades)
+              for individuals with Autism spectrum disorder (ASD). In Spring
+              2021, Dr. Anibal Gutierrez from the Department of Psychology
+              proposed a new study, which objective was to evaluate a training
+              simulation in both VR and AR context with non-ASD subjects. This
+              study is the preparation for the subsequential evaluation with
+              individuals with ASD.
+            </p>
+            <div class="objective section">
+              <p class="text green-left-border">OBJECTIVE</p>
+              <ul class="objective-list">
+                <li>
+                  <p class="text no-border">
+                    1. Based on the existing application, develop a VR and an AR
+                    application with a new set of learning objects, and a new
+                    training structure.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    2. Design and develop a user data-collecting component to
+                    access data of the user and the device in real-time and send
+                    it to a remote server.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-content grid">
+            <div class="process section">
+              <p class="text green-left-border">PROCESS</p>
+              <p class="text no-border">
+                The design and development of the new training simulation
+                evolved with the iterations of the training structures from
+                researchers in the Department of Psychology. Here I developed
+                this documentation based on the current application.
+              </p>
+            </div>
+            <div class="demo section">
+              <p class="text green-left-border">DEMO</p>
+              <p class="text orange-left-border">Demo with Oculus Quest 1</p>
+              <div class="video-container">
+                <video poster="/01_dtlove_2/00_dtlove_2.png" controls>
+                  <source
+                    src="/01_dtlove_2/Demo with Oculus Quest 1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <p class="text orange-left-border">Demo with Magic Leap One</p>
+              <div class="video-container">
+                <video poster="/01_dtlove_2/00_dtlove_2.png" controls>
+                  <source
+                    src="/01_dtlove_2/Demo with Magic Leap One.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="new-learning-content section">
+              <p class="text green-left-border">NEW LEARNING CONTENT</p>
+              <p class="text no-border">
+                Instead of using 3d animals, researchers decided to use a new
+                language as learning content across three different contexts:
+                virtual reality, augmented reality, and “real” reality. The
+                reason of using “new language” is that it can be conveniently
+                replicated (in the form of cards) in all the three contexts. So
+                I chose three sets of Chinese characters as the new learning
+                content.
+              </p>
+              <img
+                class="docImage"
+                src="/01_dtlove_2/05_diagram of targets_latest.png"
+                alt=""
+              />
+            </div>
+            <div class="new-training-structure section">
+              <p class="text green-left-border">NEW TRAINING STRUCTURE</p>
+            </div>
+            <div class="nav-component section">
+              <p class="text green-left-border">NAVIGATION COMPONENT</p>
+            </div>
+            <div class="data-collection-component section">
+              <p class="text green-left-border">DATA-COLLECTION COMPONENT</p>
+            </div>
+            <div class="debug-component section">
+              <p class="text green-left-border">DEBUG COMPONENT</p>
+            </div>
+            <div class="other-features section">
+              <p class="text green-left-border">OTHER FEATURES</p>
+            </div>
+            <div class="spatial-layout section">
+              <p class="text green-left-border">SPATIAL LAYOUT</p>
+            </div>
+            <div class="next-step section">
+              <p class="text green-left-border">NEXT STEP</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
