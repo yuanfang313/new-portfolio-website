@@ -108,6 +108,13 @@ a:hover {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  .header-bar.container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 /* style_works */
 .works.item img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);

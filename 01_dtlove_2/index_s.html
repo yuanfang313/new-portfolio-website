@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Fang Yuan</title>
+  </head>
+  <style>
+    .main-content.grid {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .collapsible {
+      background-color: #ececec;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-bottom: 1px solid rgb(212, 212, 212);
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #ffffff;
+    }
+    .collapsible:after {
+      content: "\002B";
+      color: rgb(100, 150, 0);
+      font-weight: bold;
+      font-size: 30px;
+      float: right;
+    }
+    .active:after {
+      content: "\2212";
+    }
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+  </style>
+
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">DT LOVE</p>
+            <p class="sub-title">
+              A VR application for individuals with Autism Spectrum Disorder
+              (ASD)
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Topic:
+                <p class="intro-type-detail">VR, autism</p>
+              </li>
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">
+                  7 months [Nov 2019 - May 2020, Sep 2020 - Oct 2020]
+                </p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, fullstack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">
+                  Unity 3d, SketchUp for Architecture, Photoshop, Illustrator,
+                  Audacity
+                </p>
+              </li>
+              <li class="intro-type">
+                Programming language & SDK:
+                <p class="intro-type-detail">C#, Oculus integration</p>
+              </li>
+              <li class="intro-type">
+                Platform:
+                <p class="intro-type-detail">Oculus Quest</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              Would Virtual Reality (VR) technology facilitate the learning
+              process of individuals with Autism Spectrum Disorder (ASD)?
+            </p>
+            <p class="text no-border">
+              DT LOVE is short for Discrete Trial Learning Over Virtual
+              Environments. Originally it was a VR application aiming at
+              “replicating” the training (proved to be effective for decades)
+              for individuals with Autism spectrum disorder (ASD). In Spring
+              2021, Dr. Anibal Gutierrez from the Department of Psychology
+              proposed a new study, which objective was to evaluate a training
+              simulation in both VR and AR context with non-ASD subjects. This
+              study is the preparation for the subsequential evaluation with
+              individuals with ASD.
+            </p>
+            <div class="objective section">
+              <p class="text green-left-border">OBJECTIVE</p>
+              <ul class="section-list objective-list">
+                <li>
+                  <p class="text no-border">
+                    Based on the existing application, develop a VR and an AR
+                    application with a new set of learning objects, and a new
+                    training structure.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Design and develop a user data-collecting component to
+                    access data of the user and the device in real-time and send
+                    it to a remote server.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-content grid">
+            <div class="process section">
+              <p class="text green-left-border">PROCESS</p>
+              <p class="text no-border">
+                The design and development of the new training simulation
+                evolved with the iterations of the training structures from
+                researchers in the Department of Psychology. Here I developed
+                this documentation based on the current application.
+              </p>
+            </div>
+            <div class="demo section">
+              <p class="text green-left-border">DEMO</p>
+              <p class="text orange-left-border">Demo with Oculus Quest 1</p>
+              <div class="video-container">
+                <video poster="assets/00_dtlove_2.png" controls>
+                  <source
+                    src="assets/Demo with Oculus Quest 1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <p class="text orange-left-border">Demo with Magic Leap One</p>
+              <div class="video-container">
+                <video poster="assets/00_dtlove_2.png" controls>
+                  <source
+                    src="assets/Demo with Magic Leap One.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="new-learning-content section">
+              <button class="text green-left-border collapsible">
+                NEW LEARNING CONTENT
+              </button>
+              <div class="content">
+                <p class="text no-border">
+                  Instead of using 3d animals, researchers decided to use a new
+                  language as learning content across three different contexts:
+                  virtual reality, augmented reality, and “real” reality. The
+                  reason of using “new language” is that it can be conveniently
+                  replicated (in the form of cards) in all the three contexts.
+                  So I chose three sets of Chinese characters as the new
+                  learning content.
+                </p>
+                <img
+                  class="docImage"
+                  src="assets/05_diagram of targets_latest.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="new-training-structure section">
+              <button class="text green-left-border collapsible">
+                NEW TRAINING STRUCTURE
+              </button>
+              <div class="content">
+                <p class="text no-border">
+                  In this phase of application development, we added three new
+                  levels (with new training structures) to the application,
+                  which were “PRETEST”, “CONDITIONAL PRETEST”, “FIELDS OF X”.
+                  The training structure in “Level One” and “Level two” remains
+                  the same with the previous application (using 3d animal models
+                  as learning content).
+                </p>
+                <img
+                  class="docImage"
+                  src="assets/06_new training structure.png"
+                  alt=""
+                />
+                <p class="text orange-left-border">PRETEST</p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing a trial in Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      Rules of selecting (by the system) a target character for
+                      each trial ◦ For each trial, one of the six target
+                      characters will be randomly selected. ◦ The same target
+                      character won’t be selected successively more than twice.
+                    </p>
+                  </li>
+                </ul>
+                <p class="text orange-left-border">CONDITIONAL PRETEST</p>
+                <p class="text no-border">
+                  Conditional Pretest consists of three sections: Baseline Test,
+                  Training, and Post Test.
+                </p>
+                <p class="text blue-left-border">BASELINE TEST & POST TEST</p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing a trial in Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      Rules of selecting (by the system) a target character for
+                      each trial: same as “PRETEST”.
+                    </p>
+                  </li>
+                </ul>
+                <p class="text blue-left-border">TRAINING</p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing a trial in Pretest: trigger the
+                      target character without prompts (within 3s after
+                      characters appear).
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing Pretest: trigger the target
+                      character without prompts for successively 3 times for all
+                      the three “pairs of characters” (“horse” (马) and “cattle”
+                      (牛), “goose” (鵝) and “fox” (狐), “bear” (熊) and
+                      “elephant” (象)).
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      Rules of selecting (by the system) a target character for
+                      each trial:
+                    </p>
+                    <ul class="second section-list">
+                      <li>
+                        <p class="text no-border">
+                          Randomly select a “pair of characters” among the three
+                          pairs of characters.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          Given the pair of characters, randomly select target
+                          character within the pair.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          The same target character won’t be selected
+                          succesively more than twice.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          If both characters in the pair are selected correctly
+                          in time (within 3s) for succesively 3 times, move to
+                          the next pair of characters.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <img
+                  class="docImage"
+                  src="assets/06_pretest-conditional test_example.jpg"
+                />
+                <p class="text orange-left-border">FIELDS OF X</p>
+                <p class="text no-border">
+                  "Fields of x" consists of three sections: Baseline Test,
+                  Training, and Post Test.
+                </p>
+                <p class="text blue-left-border">BASELINE TEST & POST TEST</p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing a trial in Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing Pretest: no criteria.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      Rules of selecting (by the system) a target character for
+                      each trial: same as “PRETEST”.
+                    </p>
+                  </li>
+                </ul>
+                <p class="text blue-left-border">TRAINING</p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing a trial in Pretest: trigger the
+                      target character without prompts (within 3s after
+                      characters appear).
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      The criteria for passing Pretest: trigger the target
+                      character without prompts for successively 3 times for all
+                      the three “pairs of characters” (“horse” (马) and “cattle”
+                      (牛), “goose” (鵝) and “fox” (狐), “bear” (熊) and
+                      “elephant” (象)).
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      Rules of selecting (by the system) a target character for
+                      each trial:
+                    </p>
+                    <ul class="second section-list">
+                      <li>
+                        <p class="text no-border">
+                          Randomly select a character among the six target
+                          character.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          The same target character won’t be selected
+                          successively more than twice.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          If the user doesn’t make the right response within a
+                          certain time frame (3s), the same target character
+                          will be selected again till the user gets it right.
+                        </p>
+                      </li>
+                      <li>
+                        <p class="text no-border">
+                          If both characters in the pair are selected correctly
+                          in time (within 3s) for succesively 3 times, move to
+                          the next pair of characters.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <img class="docImage" src="assets/06_field of x_example.png" />
+              </div>
+            </div>
+            <div class="nav-component section">
+              <button class="text green-left-border collapsible">
+                NAVIGATION COMPONENT
+              </button>
+              <div class="content"></div>
+            </div>
+            <div class="data-collection-component section">
+              <button class="text green-left-border collapsible">
+                DATA-COLLECTION COMPONENT
+              </button>
+              <div class="content"></div>
+            </div>
+            <div class="debug-component section">
+              <button class="text green-left-border collapsible">
+                DEBUG COMPONENT
+              </button>
+              <div class="content"></div>
+            </div>
+            <div class="other-features section">
+              <button class="text green-left-border collapsible">
+                OTHER FEATURES
+              </button>
+              <div class="content"></div>
+            </div>
+            <div class="spatial-layout section">
+              <button class="text green-left-border collapsible">
+                SPATIAL LAYOUT
+              </button>
+              <div class="content"></div>
+            </div>
+            <div class="next-step section">
+              <button class="text green-left-border collapsible">
+                NEXT STEP
+              </button>
+              <div class="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
