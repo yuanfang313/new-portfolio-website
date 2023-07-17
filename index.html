@@ -11,7 +11,7 @@
   <body>
     <!-- navigation -->
     <main>
-      <div class="header-bar container">
+      <div class="header-bar container" id="myHeader">
         <div class="header-bar item left">
           <a href="/">Fang Yuan</a>
         </div>
@@ -26,7 +26,7 @@
       <div class="works container">
         <div class="works item">
           <a
-            href="https://yuanfang313.github.io/new-portfolio-website/01_dtlove_2/index_s.html"
+            href="https://yuanfang313.github.io/new-portfolio-website/01_dtlove_2/"
             ><img
               class="coverImage"
               src="01_dtlove_2/assets/00_dtlove_2.png"
@@ -36,7 +36,9 @@
             <p class="work-title">
               DT LOVE <span class="work-title small"> | Latest Version</span>
             </p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-subTitle">
+              VR | AR | Oculus Quest | Magic Leap One | Autism
+            </p>
           </div>
         </div>
         <div class="works item">
@@ -44,8 +46,8 @@
             ><img class="coverImage" src="02_dtlove_1/00_dtlove_1.png" alt=""
           /></a>
           <div class="work-title-container">
-            <p class="work-title">Work Title</p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-title">DT LOVE</p>
+            <p class="work-subTitle">VR | Oculus Quest | Autism</p>
           </div>
         </div>
         <div class="works item">
@@ -53,8 +55,8 @@
             ><img class="coverImage" src="03_birds/00_birds.png" alt=""
           /></a>
           <div class="work-title-container">
-            <p class="work-title">Work Title</p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-title">The Birds on Earth</p>
+            <p class="work-subTitle">AR | ARkit</p>
           </div>
         </div>
         <div class="works item">
@@ -62,8 +64,10 @@
             ><img class="coverImage" src="04_pritzker/00_pritzker.png" alt=""
           /></a>
           <div class="work-title-container">
-            <p class="work-title">Work Title</p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-title">
+              The People Who Won the Pritzker Architecture Prize
+            </p>
+            <p class="work-subTitle">Interactive Data Visualization | D3.js</p>
           </div>
         </div>
         <div class="works item">
@@ -71,8 +75,10 @@
             ><img class="coverImage" src="05_sanlian/00_sanlian.png" alt=""
           /></a>
           <div class="work-title-container">
-            <p class="work-title">Work Title</p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-title">The World on the Cover</p>
+            <p class="work-subTitle">
+              Interactive Data Visualization | D3.js | React.js
+            </p>
           </div>
         </div>
         <div class="works item">
@@ -83,8 +89,8 @@
               alt=""
           /></a>
           <div class="work-title-container">
-            <p class="work-title">Work Title</p>
-            <p class="work-subTitle">Work Sub-title</p>
+            <p class="work-title">Graphic Archive</p>
+            <p class="work-subTitle"></p>
           </div>
         </div>
       </div>
@@ -95,5 +101,22 @@
         </div>
       </div>
     </main>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
