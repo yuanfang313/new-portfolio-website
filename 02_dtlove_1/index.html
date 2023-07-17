@@ -3,7 +3,414 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Fang Yuan</title>
   </head>
-  <body></body>
+  <style>
+    .docImage.grid-container.four {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .docImage.grid-container.three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .docImage.grid {
+      border: 1px solid rgb(186, 186, 186);
+      border-radius: 5%;
+    }
+    .docImage.straight {
+      width: 60%;
+      margin: 0 auto;
+    }
+    @media (max-width: 800px) {
+      .docImage.straight {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container" id="myHeader">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">DT LOVE</p>
+            <p class="sub-title">
+              A VR application for individuals with Autism Spectrum Disorder
+              (ASD)
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Topic:
+                <p class="intro-type-detail">VR, autism</p>
+              </li>
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">
+                  7 months [Nov 2019 - May 2020, Sep 2020 - Oct 2020]
+                </p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, fullstack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">
+                  Unity 3d, SketchUp for Architecture, Photoshop, Illustrator,
+                  Audacity
+                </p>
+              </li>
+              <li class="intro-type">
+                Programming language & SDK:
+                <p class="intro-type-detail">C#, Oculus integration</p>
+              </li>
+              <li class="intro-type">
+                Platform:
+                <p class="intro-type-detail">Oculus Quest</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              Would Virtual Reality (VR) technology facilitate the learning
+              process of individuals with Autism Spectrum Disorder (ASD)?
+            </p>
+            <p class="text no-border">
+              DT LOVE is short for Discrete Trial Learning Over Virtual
+              Environments. Originally it was a VR application aiming at
+              “replicating” the training (proved to be effective for decades)
+              for individuals with Autism spectrum disorder (ASD).
+            </p>
+            <div class="objective section">
+              <p class="text green-left-border">OBJECTIVE</p>
+              <ul class="section-list objective-list">
+                <li>
+                  <p class="text no-border">
+                    Research Value. It would enable researchers to evaluate the
+                    use of VR technology in such training ( the research was
+                    proposed by Dr. Anibal Gutierrez from the Department of
+                    Psychology, University of Miami).
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Social & Business Value. Besides the research value, if
+                    individuals with ASD could achieve similar or better
+                    learning results in VR training like that in the live
+                    training in the clinics or classrooms, it would allow them
+                    to have more training with fewer costs, and the state of art
+                    training would be available for more people.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-content grid">
+            <div class="demo section">
+              <p class="text green-left-border">TRAILER</p>
+              <div class="video-container">
+                <video poster="assets/img_v_00.png" controls>
+                  <source
+                    src="assets/v_00_Capstone trailer_new.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="process section">
+              <p class="text green-left-border">PROCESS</p>
+              <p class="text no-border">
+                The process of the design and development for this VR
+                application is quite different from projects in other platforms.
+                There are some reasons resulting in the numerous iterations
+                among Ideation & Design, Prototype & Implementation and Expert
+                Review:
+              </p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    no tools can really prototype a VR experience, except Unity
+                    3D
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    lack of related works as precedents
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="research section">
+              <p class="text green-left-border">RESEARCH</p>
+              <p class="text no-border">
+                I visited the Intensive Behavioral Intervention Services (IBIS)
+                clinic at the University of Miami at the beginning of the
+                project. By immersing myself in the context and closely
+                observing the various trainings for children with ASD, I got a
+                vivid impression of how the training was done in reality. Then I
+                met with the director of IBIS clinic, Dr. Anibal Gutierrez, to
+                learn some background knowledge about ASD and the research he
+                proposed.
+              </p>
+              <div class="docImage grid-container four">
+                <img
+                  class="docImage grid"
+                  src="assets/img_04_01_Contextual Inquiry copy.png"
+                  alt=""
+                />
+                <img
+                  class="docImage grid"
+                  src="assets/img_04_02_SME Interview copy.png"
+                  alt=""
+                />
+                <img
+                  class="docImage grid"
+                  src="assets/img_04_03_Product Audit copy.png"
+                  alt=""
+                />
+                <img
+                  class="docImage grid"
+                  src="assets/img_04_04_Technical Research copy.png"
+                  alt=""
+                />
+              </div>
+              <p class="text no-border">
+                During the meeting, Dr. Gutierrez suggested me to simulate
+                Discrete Trial Training (DTT). Discrete trial training (DTT) is
+                a structured **Applied Behavior Analysis** (ABA) technique that
+                was one of the first interventions developed for autism and had
+                extensive research supporting it. A trial of DT training has
+                three basic components: Antecedent, Behavior, and Consequence.
+                Normally, Antecedent is the questions from instructors. Behavior
+                is the response from students with ASD to the Antecedent.
+                Consequence is the feedback of the behavior from instructors.
+              </p>
+              <p class="text no-border">
+                Essentially, in this kind of training, the users’ task is to
+                choose the right model as the instructor providing the verbal
+                name of that object. Normally, the instructor would ask
+                questions like “which one is …“or “touch the …“.
+              </p>
+              <p class="text no-border">
+                The diagram beneath shows the basic structure of this type of
+                training.
+              </p>
+              <div class="docImage straight">
+                <img
+                  class="docImage"
+                  src="assets/img_04_research-structure.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="interactive-design section">
+              <p class="text green-left-border">INTERACTION DESIGN</p>
+              <p class="text no-border">
+                Prompts are the “cues” from the instructors that help students
+                with ASD find the right answer. It happens between Antecedent
+                and Behavior. In the real training context, when students
+                hesitate or don’t respond to the Antecedent (question), normally
+                instructors would provide prompts like repeating the question or
+                holding one hand of the student and putting it on the target
+                object.
+              </p>
+              <img
+                class="docImage"
+                src="assets/img_05_interaction-design_00.png"
+                alt=""
+              />
+              <div class="question one">
+                <p class="text red-left-border">
+                  How to translate different "prompts" to VR experience?
+                </p>
+                <p class="text orange-left-border">
+                  1.1 Prompts in the live training
+                </p>
+                <img
+                  class="docImage"
+                  src="assets/img_05_interaction-design_01.png"
+                  alt=""
+                />
+                <p class="text orange-left-border">
+                  1.2 Prompts in the first iteration (storyboard)
+                </p>
+                <img
+                  class="docImage"
+                  src="assets/img_05_interaction-design_02.png"
+                  alt=""
+                />
+                <p class="text orange-left-border">
+                  1.3 Prompts in the final prototype
+                </p>
+                <div class="docImage grid-container four">
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_prompt design_03-1.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_prompt design_03-2.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_prompt design_03-3.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_prompt design_03-4.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text orange-left-border">
+                  1.4 The distribution of prompts along the timeline
+                </p>
+                <img
+                  class="docImage"
+                  src="assets/img_05_interaction-design_prompt design_04.png"
+                  alt=""
+                />
+              </div>
+              <div class="question two">
+                <p class="text red-left-border">
+                  2. How to enable users to select objects in VR?
+                </p>
+                <p class="text no-border">
+                  The most important interaction of this VR system is selecting
+                  the object in front of users. In the stage of Technical
+                  Research, I tried three approaches shown as beneath. And
+                  finally chose “using a virtual pointer with controller” due to
+                  two reasons:
+                </p>
+                <ul class="section-list">
+                  <li>
+                    <p class="text no-border">
+                      using controller would enable more accurate tracking of
+                      users’ movements
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text no-border">
+                      using a virtual pointer would allow users to interact with
+                      full-size objects at a certain distance
+                    </p>
+                  </li>
+                </ul>
+                <p class="text orange-left-border">
+                  2.1 Technical research of "selecting" behaviors in VR
+                </p>
+                <div class="docImage grid-container three">
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_01.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_02.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_03.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text orange-left-border">
+                  2.2 Different "selecting" behaviors in the final prototype
+                </p>
+                <p class="text no-border">
+                  In the scope of the detailed VR experience, selecting
+                  behaviors are separated by three types of interactive objects,
+                  allowing users to be more aware of the difference between
+                  these objects. To differentiate different selecting behaviors,
+                  I mainly used different auditory feedbacks for hovering and
+                  triggering (behaviors of virtual pointer) to do the
+                  separation.
+                </p>
+                <div class="docImage grid-container three">
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_04.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_05.png"
+                    alt=""
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_selecting design_06.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text orange-left-border">
+                  DEMO: Select different objects
+                </p>
+                <div class="video-container">
+                  <video poster="assets/img_v_00.png" controls>
+                    <source src="assets/v_02_selectItem.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="question three"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      let header = document.getElementById("myHeader");
+      let sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
 </html>
