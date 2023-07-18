@@ -184,6 +184,24 @@ video {
   }
 }
 
+.btn.view-detailed-doc {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 0px solid black;
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.btn.view-detailed-doc:hover {
+  background-color: rgb(191, 249, 149);
+  transform: translateX(1em);
+}
+.title.view-detailed-doc {
+  font-size: 20px;
+}
+
 @media (max-width: 950px) {
   .header-bar.container {
     padding-left: 5%;
