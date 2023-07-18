@@ -8,35 +8,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <title>Fang Yuan</title>
   </head>
-  <style>
-    .docImage.grid-container.four {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .docImage.grid-container.three {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .docImage.grid {
-      border: 1px solid rgb(186, 186, 186);
-      border-radius: 5%;
-    }
-    .docImage.straight {
-      width: 60%;
-      margin: 0 auto;
-    }
-    @media (max-width: 800px) {
-      .docImage.straight {
-        width: 100%;
-        margin: 0 auto;
-      }
-    }
-  </style>
   <body>
     <main>
       <!-- navigation -->
@@ -132,10 +103,10 @@
             </div>
           </div>
           <div class="main-content grid">
-            <div class="demo section">
+            <div class="trailer section">
               <p class="text green-left-border">TRAILER</p>
               <div class="video-container">
-                <video poster="assets/img_v_00.png" controls>
+                <video poster="assets/v_00_Capstone trailer_new.png" controls>
                   <source
                     src="assets/v_00_Capstone trailer_new.mp4"
                     type="video/mp4"
@@ -166,7 +137,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="research section">
               <p class="text green-left-border">RESEARCH</p>
               <p class="text no-border">
@@ -222,7 +192,7 @@
                 The diagram beneath shows the basic structure of this type of
                 training.
               </p>
-              <div class="docImage straight">
+              <div class="image narrow-container">
                 <img
                   class="docImage"
                   src="assets/img_04_research-structure.png"
@@ -230,7 +200,7 @@
                 />
               </div>
             </div>
-            <div class="interactive-design section">
+            <div class="interaction-design section">
               <p class="text green-left-border">INTERACTION DESIGN</p>
               <p class="text no-border">
                 Prompts are the “cues” from the instructors that help students
@@ -241,11 +211,14 @@
                 holding one hand of the student and putting it on the target
                 object.
               </p>
-              <img
-                class="docImage"
-                src="assets/img_05_interaction-design_00.png"
-                alt=""
-              />
+              <div class="image narrow-container">
+                <img
+                  class="docImage"
+                  src="assets/img_05_interaction-design_00.png"
+                  alt=""
+                />
+              </div>
+
               <div class="question one">
                 <p class="text red-left-border">
                   How to translate different "prompts" to VR experience?
@@ -299,6 +272,14 @@
                   src="assets/img_05_interaction-design_prompt design_04.png"
                   alt=""
                 />
+                <p class="text orange-left-border">
+                  DEMO: Different prompts in a trial
+                </p>
+                <div class="video-container">
+                  <video poster="assets/v_01_promts.png" controls>
+                    <source src="assets/v_01_promts.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div class="question two">
                 <p class="text red-left-border">
@@ -378,12 +359,263 @@
                   DEMO: Select different objects
                 </p>
                 <div class="video-container">
-                  <video poster="assets/img_v_00.png" controls>
+                  <video poster="assets/v_02_selectItem.png" controls>
                     <source src="assets/v_02_selectItem.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
-              <div class="question three"></div>
+              <div class="question three">
+                <p class="text red-left-border">
+                  3. How to translate different "rewards" to VR experience?
+                </p>
+                <p class="text no-border">
+                  The “feedback” here refers to instructors’ response after
+                  students with ASD choose the answer. If the answer were wrong,
+                  the instructor would simply tell the student it isn’t the
+                  right answer and clean the field, then prepare for the next
+                  trial. If the answer were correct, instructors would reward
+                  them with verbal praise or toys, like a toy car, bubbles, a
+                  short clip of cartoon, or physical interactions like giving a
+                  high five or a swing, tickling, hugging.
+                </p>
+                <p class="text orange-left-border">
+                  3.1 Rewards in the live training
+                </p>
+                <div class="docImage grid-container three">
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_01.png"
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_02.png"
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_03.png"
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_04.png"
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_05.png"
+                  />
+                  <img
+                    class="docImage grid"
+                    src="assets/img_05_interaction-design_reward design_06.png"
+                  />
+                </div>
+                <div class="container two-column">
+                  <div class="column">
+                    <p class="text orange-left-border">
+                      3.2 Rewards in the first iteration (storyboard)
+                    </p>
+                    <img
+                      class="docImage"
+                      src="assets/img_05_interaction-design_reward design_07.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="column">
+                    <p class="text orange-left-border">
+                      3.3 Rewards in the final prototype
+                    </p>
+                    <img
+                      class="docImage"
+                      src="assets/img_05_interaction-design_reward design_08.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <p class="text orange-left-border">
+                  DEMO: The Reward for the Right Answer
+                </p>
+                <div class="video-container">
+                  <video poster="assets/v_03_reward rightAnswer.png" controls>
+                    <source
+                      src="assets/v_03_reward rightAnswer.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+                <p class="text orange-left-border">DEMO: a complete session</p>
+                <div class="video-container">
+                  <video poster="assets/v_04_a session.png" controls>
+                    <source src="assets/v_04_a session.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="3d-interface-design section">
+              <p class="text orange-left-border">Spatial Layout</p>
+              <img
+                class="docImage"
+                src="assets/img_06_3d interface design_spatial layout.png"
+              />
+              <p class="text orange-left-border">Field Of View (FOV)</p>
+              <p class="text no-border">
+                The field of view (FOV) is the angular measure of what can be
+                seen at a single point in time. Normally, the FOV of a VR
+                headset like Oculus Quest would be less than that of a person
+                with naked eyes. In this project, users need to stand or sit
+                stationarily to choose the correct answer from the models in
+                front of them. Therefore, besides other interactive objects like
+                buttons on the navigation panel, arrange all the models within
+                the horizontal and vertical FOV of the VR headset is crucial for
+                the performance of the users and the result of the research it
+                assisting.
+              </p>
+              <p class="text no-border">
+                The horizontal and vertical FOV of Oculus Quest varies in
+                different reports, blogs, or posts online. Therefore, I decided
+                to measure them by meself using a matrix of cubes in Unity. With
+                an Interpupillary Distance (IPD) of 62, the user’s horizontal
+                FOV is 102°, and the vertical FOV is 100°.
+              </p>
+              <img
+                class="docImage"
+                src="assets/img_06_3d interface design_spatial layout_fov.png"
+              />
+            </div>
+            <div class="implementation section">
+              <p class="text no-border">
+                For this project, the implementation was a part of “ideation &
+                Design.” Only by implementing features in Unity 3d with all the
+                logic of training and effects can the design and development
+                move forwards.
+              </p>
+              <p class="text no-border">
+                The detailed process of implementation is well recorded in my
+                design journal.
+              </p>
+            </div>
+            <div class="testing-evaluation section">
+              <p class="text orange-left-border">Preparation</p>
+              <p class="text no-border">
+                In fall 2020, Dr. Anibal Gutierrez from the Department of
+                Psychology, University of Miami, proposed a new study in the
+                context of Covid-19. The study’s goal is to evaluate the VR
+                system with non-ASD subjects to refine the procedures first,
+                which would act as the preparation for the evaluation with
+                individuals with ASD afterward.
+              </p>
+              <p class="text no-border">
+                To realize the new study’s goal, Dr. Gutierrez provided the new
+                training structure and suggested replacing the current animal
+                models with something non-ASD subjects didn’t already know. For
+                example, they can be Japanese or Chinese characters.
+              </p>
+              <p class="text blue-left-border">
+                The task structure is shown as beneath:
+              </p>
+              <img
+                class="docImage"
+                src="assets/img_08_testing & evaluation_new structure.png"
+                alt=""
+              />
+              <p class="text orange-left-border">Final Testing</p>
+              <p class="text no-border">
+                The final testing would be conducted in the Department of
+                Psychology, University of Miami, in Spring 2021.
+              </p>
+              <p class="text orange-left-border">DEMO: New study</p>
+              <div class="video-container">
+                <video poster="assets/v_05_new study.png" controls>
+                  <source src="assets/v_05_new study.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="reflection section">
+              <p class="text no-border">
+                This project gives me a great opportunity to create a VR
+                application from scratch: from research to ideation, to design,
+                to prototype, to implementation, and justify design decisions
+                through numerous iterations with professionals in both fields of
+                design and psychology.
+              </p>
+              <p class="text no-border">
+                In this project, I explored a lot of 3d effects I learned from
+                other media, like movies and anime. For me, as a designer for 3d
+                real context before, the amazing effects a VR system can present
+                are mind-blowing. And the professionals in design and psychology
+                were all very optimistic and exciting about the project.
+              </p>
+              <p class="text orange-left-border">Limitation & Concerns</p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    Customization: currently, the project can’t enable in-app
+                    customization. Even though I’d arranged the settings in
+                    Unity 3d to allow a person to do the customization almost
+                    without any experience of Unity 3d, it would be an obstacle
+                    for the future research without a unity developer.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Auto recording system: one advantage of a Virtual Reality
+                    system is that it can record various data from users during
+                    use. This feature would significantly reduce the workload of
+                    instructors in clinics or classrooms. Currently, the
+                    application can only record the scores when users pass a
+                    level.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Target Users: Oculus Quest, together with other VR headsets,
+                    all have a similar age limit for users. For Oculus Quest, it
+                    is 13+. Even though there might be VR headsets designed for
+                    younger children in the future, at this point, the target
+                    users chosen for the testing for this project should at
+                    least be 13 years old.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Lack of design guidelines: when I started the project’s
+                    design process, I couldn’t find any design guidelines about
+                    creating VR applications for individuals with ASD. All the
+                    design decisions I made were based on training in the real
+                    context, my own design experience, and suggestions from
+                    psychologists and designers. Before the final evaluation of
+                    the application, it remains unknown whether these designs
+                    are good practice for the target users.
+                  </p>
+                </li>
+              </ul>
+              <p class="text orange-left-border">Next Step</p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    Study the results of the testing in the Department of
+                    Psychology.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Design and conduct testing from HCI researchers’ perspective
+                    to extract design insights about designing the VR system for
+                    individuals with ASD.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Explore other increasing mature VR features, like hand
+                    tracking, voice command, eye tracking, etc.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Explore the use of VR for different types of training for
+                    individuals with ASD, like training for communication
+                    skills.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
