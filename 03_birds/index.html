@@ -3,7 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Fang Yuan</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container" id="myHeader">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">The Birds on Earth</p>
+            <p class="sub-title">
+              An AR application helping kids learning knowledge of birds
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Topic:
+                <p class="intro-type-detail">AR, education</p>
+              </li>
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">1 months [Mar 2019, Jun 2020]</p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, fullstack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">
+                  Unity 3d, Sketch Photoshop, Illustrator, Audacity
+                </p>
+              </li>
+              <li class="intro-type">
+                Programming language & SDK:
+                <p class="intro-type-detail">C#, Vuforia</p>
+              </li>
+              <li class="intro-type">
+                OS:
+                <p class="intro-type-detail">iOS</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              How can Augmented Reality (AR) technology enhance the learning
+              process of people?
+            </p>
+            <p class="text red-left-border">
+              How are the applications using AR technology different from others
+              from the perspective of UX design?
+            </p>
+            <p class="text red-left-border">
+              What is the role of AR in the process of communicating
+              information?
+            </p>
+            <p class="text no-border">
+              The Birds on Earth is my first try to design and prototype an
+              application using Augmented Reality (AR) technology. It is a
+              handheld mobile video see-through augmented reality based on a
+              series of images (a self-designed children book) as targets.
+            </p>
+            <p class="text no-border">
+              With the curiosity of this emerging technology and the three
+              questions in mind, I finally decided to start from a specific
+              project to learn designing with AR: an AR application that can
+              help kids learn about birds.
+            </p>
+          </div>
+          <div class="main-content grid">
+            <div class="demo section">
+              <p class="text green-left-border">DEMO: AR CONTENT</p>
+              <div class="video-container">
+                <video poster="assets/v_00_The Birds on Earth.png" controls>
+                  <source src="assets/" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="view-detailed-doc-container">
+              <a href="index_d.html">
+                <button class="btn view-detailed-doc">
+                  <p class="title view-detailed-doc">
+                    View Detailed Documentation
+                    <span class="right-arrow">→</span>
+                  </p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      let header = document.getElementById("myHeader");
+      let sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
 </html>
