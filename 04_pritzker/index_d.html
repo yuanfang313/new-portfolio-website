@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Fang Yuan</title>
+  </head>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container" id="myHeader">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">
+              People Who the Pritzker Architecture Prize
+            </p>
+            <p class="sub-title">
+              An interactive data visualization project to explore the life of
+              the Pritzker Architecture Prize's laureates
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">2 months [Apr-Jun 2020]</p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, full-stack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">Photoshop, Illustrator, Excel</p>
+              </li>
+              <li class="intro-type">
+                Programming language & lib:
+                <p class="intro-type-detail">HTML, CSS, JS, D3.js</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              What makes a master architect a master?
+            </p>
+            <p class="text no-border">
+              When a person decided to become an architect, this is a question
+              he or she would definitely ask. So did I. After more than ten
+              years, I finally got the chance to explore this question with the
+              skills and knowledge of a journalist, architect, and programmer.
+            </p>
+            <div class="objective section">
+              <p class="text green-left-border">PROJECT GOAL</p>
+              <p class="text no-border">
+                Besides exploring the “secret lives” of these master architects,
+                another goal of this project is to explore how to make a data
+                visualization project more attractive. I set up three design
+                principles front up [1]:
+              </p>
+              <ul class="section-list">
+                <li><p class="text no-border">show a lot of “faces”.</p></li>
+                <li>
+                  <p class="text no-border">
+                    “fold” all the contents in one screen to make readers scroll
+                    as little as possible.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    create a project with sounds (haven’t implemented).
+                  </p>
+                </li>
+              </ul>
+              <hr />
+              <p class="text no-border">
+                [1] I hadn’t done any researches about whether the three
+                approaches would present information more effectively. They were
+                just my assumptions. It might be very interesting to do a study
+                about it in the future.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="main-content grid">
+            <div class="demo section">
+              <p class="text green-left-border">PROJECT DEMO</p>
+              <div class="video-container">
+                <video
+                  poster="assets/v_00_People who won the Pritzker Architecture Prize Interaction demo.png"
+                  controls
+                >
+                  <source
+                    src="assets/v_00_People who won the Pritzker Architecture Prize Interaction demo.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="process section">
+              <img class="docImage" src="assets/img_03_process.png" />
+            </div>
+            <div class="inspiration section">
+              <p class="text orange-left-border"><i>Nobels no degrees</i></p>
+              <p class="text no-border">
+                The infographic created by Giorgia Lupi, Nobels no degrees, is
+                my initial motivation to do this project. It is one of the most
+                elegant infographics I’d ever seen, which is literally art.
+                However, essencially, the primary focus of Nobels no degrees is
+                the Nobel Prize not the laureates. Readers have no idea who are
+                these laureates, what kind of life they had lived. I want to do
+                a project with a similar topic but focus on the stories of the
+                people behind.
+              </p>
+              <img class="docImage" src="assets/img_04_inspiration_01.png" />
+              <p class="text orange-left-border">
+                <i>The World through the Eyes of the US</i>
+              </p>
+              <p class="text no-border">
+                The World through the Eyes of the US is an interactive data
+                visualization project on The Pudding. The way it presents
+                information with different levels of detail gave me a deep
+                impression. I case-studied this project and documented it in my
+                journal. When I began thinking about how to present data in
+                People Who Won the Pritzker Architecture Prize, I unconsciously
+                adopted a similar way of showing information and organizing
+                readers’ behaviors.
+              </p>
+              <img class="docImage" src="assets/img_04_inspiration_02.png" />
+            </div>
+            <div class="prototype section">
+              <p class="text no-border">
+                Before decided any topics, I made a prototype in Adobe
+                Illustrator to show the pattern in the “ages” when these
+                laureates received the award (which is definitely one of the
+                topics I want to visualize). It is the starting point of the
+                whole project.
+              </p>
+              <img class="docImage" src="assets/img_05_pritzker_original.png" />
+            </div>
+            <div class="topic section">
+              <p class="text green-left-border">PINPOINT TOPICS</p>
+              <p class="text no-border">
+                The contents of this project consist of sixteen topics, which
+                are based on my personal experience and knowledge about:
+              </p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    the facts that architects are interested
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border"></p>
+                  the facts that the public might be interested
+                </li>
+              </ul>
+              <p class="text no-border">
+                The sixteen topics were finally grouped into “LIFE”,
+                “EDUCATION”, and “CAREER”, three categories.
+              </p>
+              <img
+                class="docImage"
+                src="assets/img_06_pinpoint topic_topics.png"
+              />
+            </div>
+            <div class="envision section">
+              <p class="text green-left-border">PROJECT ENVISION</p>
+              <p class="text orange-left-border">
+                Information Hierarchy & Layout
+              </p>
+              <img
+                class="docImage"
+                src="assets/img_07_project envision_01_layout.png"
+              />
+              <p class="text orange-left-border">Interaction Design</p>
+              <img
+                class="docImage"
+                src="assets/07_project envision_02_interaction design.png"
+              />
+            </div>
+            <div class="implementation section">
+              <p class="text green-left-border">IMPLEMENTATION</p>
+              <p class="text no-border">
+                I did the prototype using d3.js from the very beginning. As a
+                novice d3 developer, the project’s form and content were limited
+                by my proficiency in programming to a great extent. Therefore,
+                after I became more familiar with Javascript, I added more
+                content (there were only five topics in the original project)
+                and visually polished it.
+              </p>
+            </div>
+            <div class="reflection section">
+              <p class="text orange-left-border">A topic about "sound"</p>
+              <p class="text no-border">
+                One more topic in the “CAREER ” in the original design was the
+                first sentence of each architect’s speech in the award ceremony.
+                This topic is actually very important for the project. On the
+                one hand, I found a trend of speaking the laureates’ first
+                language instead of English in recent years. On the other hand,
+                I believe that listening to these architects’ voice would really
+                bring the project to life.
+              </p>
+              <p class="text no-border">
+                While most laureates started the speech by greeting the host and
+                audiences, some said something very different. As the laureate
+                of 2016, Alejandro Aravena, his first sentence was “this is
+                going to be very tough.” Because the laureate of 2004, Zaha
+                Hadid, passed away just a week before the award ceremony, who
+                greatly influenced him. The project doesn’t need to include
+                information like this. To encourage readers to explore more
+                behind the scene, showing one such sentence is enough.
+              </p>
+              <p class="text orange-left-border">Limitation & Concerns</p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    Technical Feasibility: after I learned React.js, I realized
+                    that it would be a much better practice to code this project
+                    with React. The current structure of the scripts is hard to
+                    make future development effective.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Responsive Design: this project doesn’t have a mobile
+                    version at this point. It works fine for tablets, but not
+                    the screen with a smaller size. The mobile version might
+                    need a new design of the layout, interaction, and new
+                    technology.
+                  </p>
+                </li>
+              </ul>
+              <p class="text orange-left-border">Next Step</p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    Add the voice of the laureates in the project.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Design and develop the mobile version.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
+        </div>
+      </div>
+    </main>
+    <script src="../index.js"></script>
+  </body>
+</html>

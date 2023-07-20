@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Fang Yuan</title>
+  </head>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container" id="myHeader">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">A World on the Cover</p>
+            <p class="sub-title">
+              An interactive data visualization project to explore the changes
+              of Sanlian Lifeweek (2003-2018)
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">
+                  3 months [Sep - Dec 2019, Oct 2020]
+                </p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, full-stack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">Photoshop, Illustrator, Excel</p>
+              </li>
+              <li class="intro-type">
+                Programming language & lib:
+                <p class="intro-type-detail">HTML, CSS, JS, D3.js, React.js</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              How did the themes on the cover of an influential magazine in
+              China change over sixteen years (2003 - 2018)?
+            </p>
+            <p class="text no-border">
+              A World on the Cover is an interactive data visualization project
+              mainly focusing on analyzing how Cover Story‘s themes of Sanlian
+              Lifeweek changed from 2003 – 2018.
+            </p>
+            <p class="text no-border">
+              Cover Story is a column in Sanlian Lifeweek, which themes are
+              decided by the magazine and its dealers countrywide. Therefore, to
+              a certain extent, the content and theme of Cover Story is very
+              market-oriented.
+            </p>
+          </div>
+          <div class="main-content grid">
+            <div class="process section">
+              <p class="text green-left-border">PROCESS</p>
+              <img class="docImage" src="assets/img_01_process.png" />
+            </div>
+            <div class="envision section">
+              <p class="text green-left-border">PROJECT ENVISION</p>
+              <p class="text no-border">
+                The contents of this project were arranged from general to
+                specific.
+              </p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    First, it introduces the general information and the history
+                    of Sanlian Lifeweek.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    Then, it presents the changing trend of the covers’
+                    headlines based on different themes, like “Culture”,
+                    “Economy”, and subthemes, like “Mass Culture”, “Foreign
+                    Culture”, “Industries and Sectors”, “Culture Market and
+                    Media”.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    And finally, the project provides more details on each
+                    theme.
+                  </p>
+                </li>
+              </ul>
+              <p class="text no-border">
+                More detailed documentation is available in my project journal:
+                Project Proposal.
+              </p>
+            </div>
+            <div class="data section">
+              <p class="text green-left-border">DATA COLLECTION & ANALYSIS</p>
+              <p class="text no-border">
+                I spent almost two months to collect and analyze the data (more
+                than 800 headlines) from the online archive of Sanlian Lifeweek
+                manually. The biggest challenge in this part is almost all the
+                headlines can be categorized into at least two themes, and many
+                are needed to check the contents inside the magazine to confirm
+                their themes. The themes and subthemes summarised from the data
+                collection & analysis are shown beneath.
+              </p>
+              <p class="text no-border">
+                More detailed documentation is available in my project journal:
+                First Layer of Categories, Second Layer of Categories
+              </p>
+              <img class="docImage" src="assets/img_03_data.png" />
+              <img class="docImage" src="assets/img_03_themes.png" />
+            </div>
+            <div class="prototype section">
+              <p class="text green-left-border">PROTOTYPE</p>
+              <p class="text no-border">
+                Before visualzing the data with d3.js, I used Flourish as the
+                prototyping tool.
+              </p>
+              <img class="docImage" src="assets/img_04_prototype.png" />
+            </div>
+            <div class="implementation section">
+              <p class="text green-left-border">IMPLEMENTATION</p>
+              <p class="text no-border">
+                After finishing the implementation with HTML, CSS, and d3.js, I
+                created a new version using React.js. With React.js the codes
+                become more structured and reusable.
+              </p>
+              <div class="docImage grid-container two">
+                <img
+                  class="docImage"
+                  src="assets/img_05_implementation_gif_01.gif"
+                />
+                <img
+                  class="docImage"
+                  src="assets/img_05_implementation_gif_02.gif"
+                />
+              </div>
+
+              <img
+                class="docImage"
+                src="assets/img_05_implementation_language.png"
+              />
+            </div>
+            <div class="reflection section">
+              <p class="text green-left-border">REFLECTION</p>
+              <p class="text no-border">
+                I first implemented d3.js, and later learned how to combine
+                React.js with d3.js in this project. I found for a small project
+                like this, it would be complicated to use React.js. And one main
+                reason for all these changes on the cover of Sanlian Lifeweek
+                might origin from the market, not the political environment,
+                which was my guess before.
+              </p>
+              <p class="text orange-left-border">Next Step</p>
+              <ul class="section-list">
+                <li>
+                  <p class="text no-border">
+                    use R to do a color analysis for all the covers.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    find a machine learning library to analyze the image
+                    appearing on the covers.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    explore more topics with the data I collected.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
+        </div>
+      </div>
+    </main>
+    <script src="../index.js"></script>
+  </body>
+</html>

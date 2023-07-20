@@ -3,7 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Fang Yuan</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="header-bar container" id="myHeader">
+        <div class="header-bar item left">
+          <a href="/">Fang Yuan</a>
+        </div>
+        <div class="header-bar item right">
+          <ul class="menu align-right">
+            <li><a href="/">Works</a></li>
+            <li><a href="/00_about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div class="all-content container">
+        <div class="grid-container">
+          <div class="title grid">
+            <p class="primary-title">
+              People Who the Pritzker Architecture Prize
+            </p>
+            <p class="sub-title">
+              An interactive data visualization project to explore the life of
+              the Pritzker Architecture Prize's laureates
+            </p>
+            <hr />
+            <ul class="short-intro">
+              <li class="intro-type">
+                Duration:
+                <p class="intro-type-detail">2 months [Apr-Jun 2020]</p>
+              </li>
+              <li class="intro-type">
+                Role:
+                <p class="intro-type-detail">
+                  Independent project, full-stack designer & developer
+                </p>
+              </li>
+              <li class="intro-type">
+                Prototyping Tools:
+                <p class="intro-type-detail">Photoshop, Illustrator, Excel</p>
+              </li>
+              <li class="intro-type">
+                Programming language & lib:
+                <p class="intro-type-detail">HTML, CSS, JS, D3.js</p>
+              </li>
+            </ul>
+          </div>
+          <div class="long-intro grid">
+            <p class="text red-left-border">
+              What makes a master architect a master?
+            </p>
+            <p class="text no-border">
+              When a person decided to become an architect, this is a question
+              he or she would definitely ask. So did I. After more than ten
+              years, I finally got the chance to explore this question with the
+              skills and knowledge of a journalist, architect, and programmer.
+            </p>
+            <div class="objective section">
+              <p class="text green-left-border">PROJECT GOAL</p>
+              <p class="text no-border">
+                Besides exploring the “secret lives” of these master architects,
+                another goal of this project is to explore how to make a data
+                visualization project more attractive. I set up three design
+                principles front up [1]:
+              </p>
+              <ul class="section-list">
+                <li><p class="text no-border">show a lot of “faces”.</p></li>
+                <li>
+                  <p class="text no-border">
+                    “fold” all the contents in one screen to make readers scroll
+                    as little as possible.
+                  </p>
+                </li>
+                <li>
+                  <p class="text no-border">
+                    create a project with sounds (haven’t implemented).
+                  </p>
+                </li>
+              </ul>
+              <hr />
+              <p class="text no-border">
+                [1] I hadn’t done any researches about whether the three
+                approaches would present information more effectively. They were
+                just my assumptions. It might be very interesting to do a study
+                about it in the future.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="main-content grid">
+            <div class="demo section">
+              <p class="text green-left-border">PROJECT DEMO</p>
+              <div class="video-container">
+                <video
+                  poster="assets/v_00_People who won the Pritzker Architecture Prize Interaction demo.png"
+                  controls
+                >
+                  <source
+                    src="assets/v_00_People who won the Pritzker Architecture Prize Interaction demo.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="view-detailed-doc-container">
+              <a href="index_d.html">
+                <button class="btn view-detailed-doc">
+                  <p class="title view-detailed-doc">
+                    View Detailed Documentation
+                    <span class="right-arrow">→</span>
+                  </p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright container">
+        <div class="copyright item">
+          <a href="/">© Fang Yuan</a>
+        </div>
+      </div>
+    </main>
+    <script src="../index.js"></script>
+  </body>
 </html>
