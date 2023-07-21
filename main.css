@@ -1,4 +1,3 @@
-/* ----layout---- */
 * {
   box-sizing: border-box;
 }
@@ -6,6 +5,18 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: rgb(255, 255, 255);
+}
+p {
+  margin: 0px;
+}
+hr {
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: grey;
 }
 ul {
   padding: 0px;
@@ -21,16 +32,14 @@ ul {
   flex-grow: 1;
 }
 
-/* layout_header */
+/* #region ---home & sub-page_[navigation]--- */
+.header-bar {
+  width: 100%;
+}
 .header-bar.container {
   padding-left: 3%;
   padding-right: 3%;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-bottom: 0.5px solid rgb(200, 200, 200);
   z-index: 10;
-}
-.header-bar {
-  width: 100%;
 }
 .header-bar.item.left {
   padding: 30px 0px 30px 0px;
@@ -41,12 +50,30 @@ ul {
   justify-content: end;
   align-items: center;
 }
+.header-bar.item.left a {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.menu.align-right a {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
 .menu.align-right li {
   display: inline;
   padding: 0 20px 0 20px;
 }
+.sticky {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* #endregion */
 
-/* layout_works */
+/* #region ---home_[works]--- */
 .works.container {
   display: flex;
   flex-wrap: wrap;
@@ -64,70 +91,6 @@ ul {
 .works.item:hover img {
   transform: scale(1.005);
 }
-
-/* layout_copyright */
-.copyright.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-.copyright.item {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-.works-header.wrap {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 75rem;
-}
-.sticky {
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* ----style---- */
-a {
-  color: black;
-}
-a:hover {
-  color: grey;
-}
-/* style_header */
-.header-bar.item.left a {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
-}
-.menu.align-right a {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-}
-
-@media (max-width: 800px) {
-  .header-bar.container {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-/* style_works */
-.works.item img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
-  transition: box-shadow 0.3s;
-}
-
-.works.item img:hover {
-  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.18);
-}
-
-.works.item img {
-  border-radius: 3%;
-}
-
 .work-title-container {
   padding-left: 5px;
 }
@@ -147,9 +110,96 @@ a:hover {
   font-size: 12.5px;
   color: rgb(75, 75, 75);
 }
+/* #endregion  */
 
-.copyright a {
-  text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
+/* #region ---sub-page_[works]--- */
+.all-content.container {
+  padding-top: 50px;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.grid {
+  padding: 5%;
+  padding-top: 0px;
+}
+/* #endregion  */
+
+/* #region ---sub-page_[title grid]--- */
+.title.grid {
+  padding-left: 13%;
+}
+.title.grid ul {
+  list-style-type: none;
+}
+.long-intro.grid {
+  padding-right: 9%;
+}
+.main-content.grid {
+  grid-column: span 2;
+}
+
+.short-intro li {
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+/* #endregion  */
+
+/* ---sub-page_[long-intro & main-content grid]--- */
+/* #region ---text style--- */
+.text.no-border {
+  margin-top: 10px;
+}
+.text.green-left-border {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+.text.red-left-border {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.text.orange-left-border {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.text.blue-left-border {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.section-list {
+  list-style: square;
+}
+.second.section-list {
+  list-style: circle;
+}
+/* #endregion  */
+/* #region ---copyright--- */
+.copyright.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.copyright.item {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/* #endregion  */
+/* #region ---Sub-page--- */
+.works-header.wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 75rem;
+}
+/* #endregion  */
+
+/* #region ---@media--- */
+@media (max-width: 800px) {
+  .header-bar.container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/* #endregion  */
