@@ -35,7 +35,7 @@ function myFunction() {
 const links = document.querySelectorAll(".projectLink");
 const githubURL = "https://yuanfang313.github.io/new-portfolio-website";
 const localURL = "";
-let realURL = githubURL;
+let realURL = localURL;
 
 links.forEach((link) => {
   let href = link.getAttribute("href");
