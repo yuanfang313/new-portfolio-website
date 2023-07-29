@@ -7,6 +7,7 @@ hr {
   border-top: 1px dashed rgb(170, 170, 170);
 }
 video {
+  width: 100%;
   height: 100%;
 }
 .container.two-column {
@@ -218,6 +219,7 @@ video {
   .video-container {
     width: 100%;
     height: 27rem;
+    overflow: hidden;
   }
 }
 @media (max-width: 800px) {
@@ -274,12 +276,14 @@ video {
   .video-container {
     width: 100%;
     height: 22rem;
+    overflow: hidden;
   }
 }
 @media (max-width: 650px) {
   .video-container {
     width: 100%;
     height: 18rem;
+    overflow: hidden;
   }
 }
 /* #endregion */
