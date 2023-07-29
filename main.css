@@ -22,10 +22,14 @@ ul {
   padding: 0px;
   margin: 0px;
 }
+main {
+  width: 100%;
+}
 .container {
   display: flex;
   flex-direction: row;
   max-width: 65rem;
+  width: 100%;
   margin: 0 auto;
 }
 .item {
