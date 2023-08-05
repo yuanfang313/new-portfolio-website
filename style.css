@@ -4,6 +4,7 @@ p {
 }
 hr {
   width: 90%;
+  max-width: 90%;
   border-top: 1px dashed rgb(170, 170, 170);
 }
 video {
